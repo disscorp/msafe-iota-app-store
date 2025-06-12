@@ -28,7 +28,7 @@ export class SwapAForExactBIntention extends BaseIntention<SwapAForExactBIntenti
   }
 
   async build(input: { client: IotaClient; account: WalletAccount }): Promise<Transaction> {
-    const { client, account } = input;
+    const { account } = input;
 
     const transaction = new Transaction();
 
